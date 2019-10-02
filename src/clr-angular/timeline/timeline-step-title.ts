@@ -7,7 +7,10 @@
 import { Component } from '@angular/core';
 
 @Component({
-  selector: 'clr-timeline-demo',
-  templateUrl: './timeline.demo.html',
+  selector: 'clr-timeline-step-title',
+  template: `
+    <ng-content></ng-content>
+  `,
+  host: { '[class.clr-timeline-step-title]': 'true' },
 })
-export class TimelineDemo {}
+export class ClrTimelineStepTitle {}
